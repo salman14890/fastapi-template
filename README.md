@@ -23,8 +23,4 @@ docker build -t fastapi-template .
 docker run --rm -p 8000:8000 fastapi-template
 ```
 
-Or with Compose:
-
-```bash
-docker compose up --build
-```
+A container's own address is on Docker's private network and is often the same on every machine. `GET /` reports the machine's public IP instead.
